@@ -1,0 +1,114 @@
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body{
+  font-family: $font;
+  line-height: 1;
+  font-weight: 400px;  /*default*/
+  color: $text-color;
+  background-color: white;
+}
+
+.button{
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: $font;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+
+  &--primary{
+    font-weight: 700;
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &--outline{
+    background-color: transparent;
+    color: $primary-color;
+    font-weight: 500;
+    border: 1px solid;
+  }
+
+  &--round{
+    border-radius: 10px;
+    padding: 17px 65px;
+    // position: relative;
+    box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.648);
+    // &:after{
+    //   content:"";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 50%;
+    //   height: 100%;
+    //   width: 90%;
+    //   background: rgba(rgba(245,56,56,0.35));
+    //   filter: blur(54px);
+    //   border-radius: 10px;
+    //   transform: translate(-50%, 50%);
+    //   z-index: -1;
+    // }
+  }
+  &--shadow{
+  position: relative;
+  &:after{
+      content:"";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 90%;
+      background-color: rgba(245, 56, 56, 0.648);
+      filter: blur(54px);
+      border-radius: inherit;
+      transform: translate(-50%, 50%);
+      // z-index: -1;
+    }
+}
+}
+
+
+.box-section{
+  max-width: 555px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font;
+}
+
+@media screen and (max-width: 767px){
+  .button{
+    padding: 13px 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .heading{
+    font-size: 30px
+  }
+}

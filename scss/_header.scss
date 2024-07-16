@@ -1,0 +1,53 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-auth{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    text-transform: capitalize;
+   }
+
+  &-signin{
+    text-decoration: none;
+    font-weight: 500;
+    color: $heading-color;
+  }
+  &-signup{
+    text-decoration: none;
+    font-weight: 500;
+    padding: 13px 45px;
+    border-radius: 100rem;
+    color: $primary-color;
+    border: 1px solid;
+  }
+}
+
+
+@media screen and (max-width: 1023px){
+  .header-auth{
+    display: none;
+  }
+  .header{
+    padding: 25px 0 50px;
+  }
+}
+// }
+  // .header{
+  //   padding: 25px 0 50px;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
+  // .header-auth{
+  //   flex-direction: row;
+  //   gap: 10px;
+  //   a{
+  //     font-size: 14px;
+  //   }
+  // }
+//  
