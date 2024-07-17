@@ -14,12 +14,10 @@
    }
 
   &-signin{
-    text-decoration: none;
     font-weight: 500;
     color: $heading-color;
   }
   &-signup{
-    text-decoration: none;
     font-weight: 500;
     padding: 13px 45px;
     border-radius: 100rem;
@@ -30,12 +28,13 @@
 
 
 @media screen and (max-width: 1023px){
-  .header-auth{
-    display: none;
-  }
   .header{
     padding: 25px 0 50px;
   }
+  .header-auth{
+    display: none;
+  }
+  
 }
 // }
   // .header{

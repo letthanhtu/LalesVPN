@@ -1,9 +1,8 @@
-.customer{
-  
-  .box-section{
+.customer {
+  .boxed {
     margin-bottom: 60px;
   }
-  .heading{
+  .heading {
     max-width: 447px;
     margin-left: auto;
     margin-right: auto;
@@ -15,137 +14,133 @@
   //   gap: 0 50px;
   // }
 
-  &-item{
+  &-item {
     border: 2px solid $gray-lighter-color;
     border-radius: 10px;
     padding: 30px;
-    width: 400px;
-    padding: 0 25px;
-    
-    &.slick-current.slick-active{
-      border-color: $primary-color
+    margin: 0 25px;
+    // width: 400px;
+
+    &.slick-current.slick-active {
+      border-color: $primary-color;
     }
   }
-  
+
   // &-item1{
   //   border: 2px solid $primary-color;
   //   border-radius: 10px;
   //   padding: 30px;
   // }
-  &-top{
+  &-top {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &-info{
+  &-info {
     display: flex;
     align-items: center;
     gap: 0 20px;
   }
-  &-avatar{
+  &-avatar {
     width: 50px;
     height: 50px;
-    img{
+    img {
       width: 100%;
       height: 100%;
-    object-fit: cover; /*hinh anh dc cut bot de vua kt*/
-    border-radius: 100rem;
-   }
- }
-//  &-name{
-//   font-size: 18px;
-//   font-weight: 500;
-//   margin-bottom: 5px;
-//   line-height: 167%;
-//  }
-//  &-address{
-//   font-size: 14px;
-//   line-height: 214%;
-//  }
- &-name,
- &-address{
-  line-height: 1;
- }
- &-rating{
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-  margin-top: 17px;
- }
- &-text{
-  width: 340px;
-  height: 100px;
- }
+      object-fit: cover; //hinh anh dc cut bot de vua kt
+      border-radius: 100rem;
+    }
+  }
+  //  &-name{
+  //   font-size: 18px;
+  //   font-weight: 500;
+  //   margin-bottom: 5px;
+  //   line-height: 167%;
+  //  }
+  //  &-address{
+  //   font-size: 14px;
+  //   line-height: 214%;
+  //  }
+  &-name,
+  &-address {
+    line-height: 1;
+  }
+  &-rating {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    // margin-top: 17px;
+  }
+  //  &-text{
+  //   width: 340px;
+  //   height: 100px;
+  //   text-wrap: wrap;
+
+  //  }
 
   // slick-track{
-.slick-track{
-  display: flex;
-  gap: 0 50px;
-  padding-bottom: 60px;
- 
-}
-.strick-list{
-  padding-bottom: 60px;
- }
- 
-.slick-dots{
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 0 15px;
-  
-  transform: translateY(50%);
-  button{
-    font-size: 0;
-    background-color: $gray-color;
-    width: 15px;
-    height: 15px;
+  .slick-track {
+    display: flex;
+    // gap: 0 50px;
+    padding-bottom: 60px;
+  }
+  .slick-arrow {
+    width: 60px;
+    height: 60px;
     border-radius: 100rem;
-    transition: all 0.2s linear;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 10;
+  }
+  .slick-prev {
+    border: 1px solid $primary-color;
+    background-color: transparent;
+    right: 80px;
+  }
+  .slick-next {
+    background-color: $primary-color;
+    right: 0;
+  }
+  // .strick-list{
+  //   padding-bottom: 60px;
+  //  }
+  .slick-dots {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+
+    transform: translateY(50%);
+    button {
+      font-size: 0;
+      background-color: $gray-color;
+      width: 15px;
+      height: 15px;
+      border-radius: 100rem;
+      transition: all 0.2s linear;
+    }
+    .slick-active button {
+      background-color: $primary-color;
+      width: 45px;
+    }
   }
 }
-.slick-active button{
-background-color: $primary-color;
-width: 45px;
-}
 
-.slick-arrow{
-  width: 60px;
-  height: 60px;
-  border-radius: 100rem;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
- z-index: 10;
-
-}
-.slick-prev{
-  border: 1px solid $primary-color;
-  background-color: transparent;
-  right: 80px;
-}
-.slick-next{
-  background-color: $primary-color;
-  right: 0;
-}
-
-}
- 
-@media screen and (max-width: 1023px){
-  .customer{
-    .slick-track{
+@media screen and (max-width: 1023px) {
+  .customer {
+    .slick-track {
       padding-bottom: 20px;
-
     }
-    .slick-dots{
+    .slick-dots {
       justify-content: center;
     }
   }
-  .customer-list{
+  .customer-list {
     padding-bottom: 50px;
   }
 }

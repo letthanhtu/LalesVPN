@@ -1,43 +1,49 @@
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $heading-color;
   font-weight: bold;
 }
 
-.heading{
+.heading {
   font-weight: 500;
   font-size: 35px;
-  line-height: calc(50/35);
+  line-height: calc(50 / 35);
   margin-bottom: 20px;
   // text-transform: capitalize;
 }
+.heading-small {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: calc(30 / 18);
+}
+.text {
+  line-height: calc(30 / 16);
 
-.text{
-  line-height: calc(30/16);
   // font-weight: 400;
   // font-size: 16px;
   // margin-top: 20px;
 }
-.text-medium{
+.text-medium {
   font-weight: 500;
 }
-.text-small{
+.text-small {
   font-size: 14px;
-  line-height: calc(30/14);
-}
-.heading-small{
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 5px;
-  line-height: calc(30/18);
-}
-.rating{
-  font-size: 16px;
-  font-weight: 400;
-  line-height: calc(30/16);
+  line-height: calc(30 / 14);
 }
 
-@media screen and (max-width: 767px){
-  .heading{
+// .rating{
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: calc(30/16);
+// }
+
+@media screen and (max-width: 767px) {
+  .heading {
     font-size: 30px;
   }
 }
